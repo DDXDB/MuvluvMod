@@ -92,11 +92,11 @@ namespace MuvluvMod
         {
             Plugin.Log.LogInfo($"Scene: {sceneMasterId}");
 
+            sceneId = sceneMasterId;
+
             __instance.sceneFrameMastersCache.Remove(sceneMasterId);
 
             if (!Config.Translation.Value) return;
-
-            sceneId = sceneMasterId;
 
             Translation.GetScenarioTranslationAsync(sceneMasterId).Wait();
 
@@ -292,7 +292,12 @@ namespace MuvluvMod
             if (Translation.rawFontAsset == null) return;
             
             text.font = Translation.rawFontAsset;
-            if (restoreMaterial) text.fontMaterial = Translation.rawOutlineMaterial;
+
+            if (restoreMaterial && Translation.rawOutlineMaterial != null)
+            {
+                text.fontMaterial = Translation.rawOutlineMaterial;
+            } 
+
             if (lineSpacing.HasValue) text.lineSpacing = lineSpacing.Value;
         }
     }
