@@ -66,8 +66,9 @@
 
 -   QQ 群 1: [660247178](https://qm.qq.com/q/N1GMXxIBCG)（已满）
 -   QQ 群 2: [485328718](https://qm.qq.com/q/rCHcfhnW6G)
+-   想要为汉化添砖加瓦或者反馈翻译问题的加这个群：[995382836](https://qm.qq.com/q/Crd9RzMQcS)（不是游戏玩法交流群）
 
-如有问题，请在群内反馈
+如有问题，请在群内反馈或者此仓库提交 Issues
 
 ---
 
